@@ -1,0 +1,41 @@
+[
+  {
+    "id": "fast",
+    "code": "FIBRE-100",
+    "name": "Fast",
+    "speed_down": 100,
+    "speed_up": 20,
+    "price_monthly": 65,
+    "price_display": "$65",
+    "description": "Plenty for a couple. Browsing, streaming, video calls — sorted.",
+    "use_case": "Great for 1-2 people",
+    "features": ["Unlimited data", "No lock-in", "60-second support"],
+    "recommended": false
+  },
+  {
+    "id": "stupid-fast",
+    "code": "FIBRE-500",
+    "name": "Stupid Fast",
+    "speed_down": 500,
+    "speed_up": 200,
+    "price_monthly": 85,
+    "price_display": "$85",
+    "description": "The whole house, all at once. No one's fighting for bandwidth.",
+    "use_case": "Perfect for families",
+    "features": ["Unlimited data", "No lock-in", "60-second support", "Manage from your phone"],
+    "recommended": true
+  },
+  {
+    "id": "ridiculously-fast",
+    "code": "FIBRE-900",
+    "name": "Ridiculously Fast",
+    "speed_down": 950,
+    "speed_up": 450,
+    "price_monthly": 99,
+    "price_display": "$99",
+    "description": "Everything you throw at it. Don't even think about it.",
+    "use_case": "For power users and large households",
+    "features": ["Unlimited data", "No lock-in", "60-second support", "Manage from your phone"],
+    "recommended": false
+  }
+]
