@@ -6,9 +6,9 @@ export function HowItWorks() {
   ];
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section id="how-it-works" className="bg-white py-16 md:py-24">
       <div className="max-w-[1200px] mx-auto px-6">
-        <h2 className="font-display font-bold text-2xl md:text-4xl text-dark text-center mb-12">
+        <h2 className="font-display font-bold text-2xl md:text-4xl text-dark text-center mb-12 reveal-on-scroll">
           How it works
         </h2>
 
@@ -21,7 +21,7 @@ export function HowItWorks() {
             <div
               key={step.num}
               className="reveal-on-scroll relative flex md:flex-col items-start md:items-center gap-4 md:gap-3 flex-1 md:text-center z-10"
-              style={{ animationDelay: `${i * 100}ms` }}
+              data-reveal-delay={`${i * 100}`}
             >
               <div className="w-12 h-12 rounded-full bg-dark text-white flex items-center justify-center font-display font-bold text-lg flex-shrink-0">
                 {step.num}

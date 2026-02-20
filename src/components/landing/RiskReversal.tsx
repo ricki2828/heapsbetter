@@ -37,7 +37,7 @@ export function RiskReversal() {
             <div
               key={card.title}
               className="reveal-on-scroll border-2 border-golden rounded-lg p-6"
-              style={{ animationDelay: `${i * 100}ms` }}
+              data-reveal-delay={`${i * 100}`}
             >
               <div className="mb-4">{card.icon}</div>
               <h3 className="font-display font-bold text-xl text-light mb-2">{card.title}</h3>

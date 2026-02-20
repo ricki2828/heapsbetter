@@ -80,7 +80,7 @@ export function AppPreview() {
                 <div
                   key={f.text}
                   className="reveal-on-scroll flex items-center gap-4"
-                  style={{ animationDelay: `${i * 100}ms` }}
+                  data-reveal-delay={`${i * 100}`}
                 >
                   <div className="w-10 h-10 rounded-lg bg-teal/10 flex items-center justify-center flex-shrink-0">
                     {icons[f.icon]}

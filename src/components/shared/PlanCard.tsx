@@ -10,9 +10,10 @@ interface PlanCardProps {
   selected?: boolean;
   onSelect: () => void;
   isOther?: boolean;
+  ctaHref?: string;
 }
 
-export function PlanCard({ plan, selected, onSelect, isOther }: PlanCardProps) {
+export function PlanCard({ plan, selected, onSelect, isOther, ctaHref }: PlanCardProps) {
   return (
     <motion.div
       layout
@@ -72,8 +73,8 @@ export function PlanCard({ plan, selected, onSelect, isOther }: PlanCardProps) {
         ))}
       </ul>
 
-      <div className="mt-6">
-        <CTAButton variant="primary" fullWidth>
+      <div className="mt-6" onClick={(e) => e.stopPropagation()}>
+        <CTAButton variant="primary" fullWidth href={ctaHref} onClick={() => onSelect()}>
           Yeah, go on then
         </CTAButton>
       </div>

@@ -15,7 +15,7 @@ const faqItems = [
 
 export function FAQ() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section id="faq" className="bg-white py-16 md:py-24">
       <div className="max-w-[720px] mx-auto px-6">
         <h2 className="font-display font-bold text-2xl md:text-4xl text-dark text-center mb-12 reveal-on-scroll">
           Questions? Answers.

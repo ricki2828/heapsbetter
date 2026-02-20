@@ -16,8 +16,8 @@ export function SocialProof() {
           {testimonials.map((t, i) => (
             <div
               key={t.name}
-              className="reveal-on-scroll bg-light border-2 border-dark rounded-lg overflow-hidden"
-              style={{ animationDelay: `${i * 100}ms` }}
+              className="reveal-on-scroll bg-white border-2 border-dark rounded-lg overflow-hidden"
+              data-reveal-delay={`${i * 100}`}
             >
               <div className="h-1 bg-orange" />
               <div className="p-6">

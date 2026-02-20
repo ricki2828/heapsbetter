@@ -13,8 +13,8 @@ export function TrustBar() {
           {badges.map((badge, i) => (
             <span
               key={badge}
-              className={`reveal-on-scroll text-dark/60 text-sm font-body font-medium whitespace-nowrap`}
-              style={{ animationDelay: `${i * 80}ms` }}
+              className="reveal-on-scroll text-dark/60 text-sm font-body font-medium whitespace-nowrap"
+              data-reveal-delay={`${i * 80}`}
             >
               {badge}
             </span>
